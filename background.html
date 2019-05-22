@@ -1,0 +1,141 @@
+<input type="checkbox" label="x" id="klh-close" checked="true" style="display: none;">
+<div class="klh-info klh-ignore">
+  <div class="klh-close">
+    <a target="_blank" href="https://conp.com.ua">
+      <img src="horizontal-logo.png" style="max-width: 30%; margin-left: 0.5em; float: left; padding: 4px 0px;">
+    </a>
+    <label for="klh-close">×</label>
+  </div>
+
+  <h3 class="klh-ignore">
+    <span class="klh-ignore" id="klh-identifier" style="font-size: 0.8em;">#12345678</span>
+    <br/>
+    <span class="klh-ignore" id="klh-name">ТОВ "СТРОЙКОНСАЛТИНГГРУПП"</span>
+  </h3>
+
+  <hr/>
+
+  <div class="klh-ignore">
+    <p><strong>Повна назва</strong><br><span class="klh-ignore" id="klh-legalName">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СТРОЙКОНСАЛТИНГГРУПП"</span></p>
+    <p><strong>Статус</strong><br><span class="klh-ignore" id="klh-currentStatus">в стані припинення</span></p>
+    <p><strong>КВЕД</strong><br><span class="klh-ignore" id="klh-full_kved">45.21.1 Будівництво будівель</span></p>
+    <p><strong>Статутний фонд</strong><br><span class="klh-ignore" id="klh-amountOfFunds">23 100 грн.</span></p>
+    <p><strong>Керівник</strong><br><span class="klh-ignore" id="klh-head">Живіцький Дмитро Олександрович</span></p>
+    <p><strong>Засновники</strong></p>
+    <ul class="klh-ignore" id="klh-founderlist">
+      <li>Живіцький Дмитро Олександрович</li>
+      <li>Святенко Сергій Євгенович</li>
+      <li>Ципін Денис Леонідович</li>
+    </ul>
+    <p><strong>Повна адреса</strong><br/><a id="klh-address" target="_blank" href="http://maps.google.com/?q=місто Київ, Дарницький район, вулиця Ялтинська, 5-Б">місто Київ, Дарницький район, вулиця Ялтинська, 5-Б</a></p>
+  </div>
+  <hr/>
+  <h4>Останні судові справи</h4>
+  <ul id="klh-lawsuitlist">
+    <li>
+      <strong style="font-size: 0.8em">10.05.2018</strong><br/>
+      <a target="_blank" href="">Постанова по справі №214/529/18</a><br/>
+      <span style="color: #777;">Адміністративне</span>
+    </li>
+    <li>
+      <strong style="font-size: 0.8em">10.05.2018</strong><br/>
+      <a target="_blank" href="">Постанова по справі №214/529/18</a><br/>
+      <span style="color: #777;">Адміністративне</span>
+    </li>
+  </ul>
+  <div class="klh-padding"></div>
+</div>
+<style>
+
+.klh-info {
+  position: fixed;
+  width: 100vw;
+  max-width: 360px;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  background: #E0E0E0;
+  z-index: 9999;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  transition: right 1.2s;
+  padding: 4.5em 1.5em 1.5em 1.5em;
+  overflow: auto;
+  font-family: Roboto,sans-serif;
+}
+
+.klh-info label {
+  display: unset;
+}
+
+.klh-info::-webkit-scrollbar {
+    width: 10px;
+}
+.klh-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.klh-info::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.klh-padding {
+  height: 5.5em;
+}
+
+.klh-close {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #CCC;
+  text-align: right;
+  padding: 5px 0px;
+}
+
+.klh-close label {
+  margin-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#klh-close:checked + div {
+  right: -500px !important;
+}
+
+#klh-lawsuitlist li {
+  margin-bottom: 0.5em;
+}
+
+.klh-info ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+.klh-info h3 {
+  font-size: 1.17em !important;
+  font-weight: bold !important;
+  display: block;
+  margin-block-start: 0em !important;
+}
+
+.klh-info *, .klh-info :after, .klh-info :before {
+  box-sizing: content-box !important;
+}
+
+.klh-info p {
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
+}
+
+.klh-info p, .klh-info li, .klh-info h3 {
+  color: #000;
+}
+
+.klh-info a {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+</style>
